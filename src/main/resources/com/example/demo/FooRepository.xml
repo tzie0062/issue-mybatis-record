@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.FooRepository">
+
+	<resultMap id="foo_map" type="com.example.demo.Foo">
+		<constructor>
+			<idArg name="id" column="id"/> <!-- javaType="java.lang.Long"/> -->
+			<arg name="name" column="name"/> <!-- javaType="java.lang.String"/> -->
+		</constructor>
+	</resultMap>
+
+	<select id="findById" resultMap="foo_map">
+		select * from foo
+	</select>
+
+</mapper>
