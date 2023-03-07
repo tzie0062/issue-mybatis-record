@@ -5,8 +5,12 @@
 
 	<resultMap id="foo_map" type="com.example.demo.Foo">
 		<constructor>
-			<idArg name="id" column="id"/> <!-- javaType="java.lang.Long"/> -->
-			<arg name="name" column="name"/> <!-- javaType="java.lang.String"/> -->
+			<idArg name="id" column="id" javaType="java.lang.Long"/>
+			<arg name="name" column="name" javaType="java.lang.String"/>
+			<!--
+			<idArg name="id" column="id"/>
+			<arg name="name" column="name"/>
+			-->
 		</constructor>
 	</resultMap>
 
