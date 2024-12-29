@@ -2,7 +2,7 @@
 
 ## Issue
 
-When using `records` plus `constructor` mappings, `MyBatis` throws an error during application startup.
+When using `records` plus `constructor` mappings, `MyBatis` throws an error during application startup. Here is the corresponding [issue](https://github.com/mybatis/mybatis-3/issues/2803) on GitHub.
 
 ```java
 at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:872)
